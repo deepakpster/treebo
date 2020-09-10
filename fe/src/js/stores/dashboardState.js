@@ -7,7 +7,6 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case "ADD_MODAL":
-      console.log("Add Modal");
       const idCounter = { ...state }.idCounter + 1;
       const id = `modal-${idCounter}`;
       return {

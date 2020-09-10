@@ -112,6 +112,12 @@ export default class Dashboard extends React.Component {
           <button className={`btn btn-danger`} onClick={this.closeModal}>
             Close
           </button>
+          <button
+            className={`btn btn-link`}
+            onClick={() => this.props.history.push("/second")}
+          >
+            Approach 2
+          </button>
         </div>
         <div
           className={styles.modalContainer}
